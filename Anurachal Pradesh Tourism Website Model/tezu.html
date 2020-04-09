@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tezu</title>
+	<style type="text/css">
+		#body{
+			background-color: rgba(0,0,0,0.85);
+			padding: 0px;
+			font-family: courier;
+		}
+		#sidenav{
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: black;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		#sidenav a{
+			padding: 0px 55px 0px 50px;
+			text-decoration: none;
+			font-size: 25px;
+			color: rgba(255,255,255,0.9);
+			display: block;
+			display: inline-flex;
+		}
+		#sidenav a:hover{
+			color: rgba(255,255,0,0.6);
+		}
+		#title{
+			color: rgba(224,224,224,0.9);
+			margin-top: 85px;
+			text-align: center;
+			font-size: 40px;
+		}
+		#para{
+		width: 55%;
+		color: rgba(224,224,224,0.9 );
+		font-size: 20px;
+		padding-left: 20px;
+		margin-top: -1200px;
+		}
+		.footer{
+		text-align: center;
+		color: rgba(224,224,224,0.8 );
+		padding-left: 20px;	
+		background-color: rgb(0,0,0);
+		}
+	 /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(224,224,224,0.85);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+	</style>
+</head>
+<body id="body">
+	<div id="sidenav">
+		<a href="Anurachal.html">Home</a>
+		<a href="destination.html">Destinations</a>
+		<a href="santury.html">Wildlife Santuries</a>
+		<a href="hotel.html">Hotels</a>
+		<a href="https://www.google.co.in/maps/place/Arunachal+Pradesh/@28.4450161,93.8051236,8z/data=!4m13!1m7!3m6!1s0x374043466a1c7227:0x76b56e552f9a92f2!2sArunachal+Pradesh!3b1!8m2!3d28.2179994!4d94.7277528!3m4!1s0x374043466a1c7227:0x76b56e552f9a92f2!8m2!3d28.2179994!4d94.7277528">Maps</a>
+		<a onclick="document.getElementById('id01').style.display='block'">Account</a>
+	</div>
+	<h1 id="title">Tezu</h1>
+	<hr>
+	<br>
+	<img src="images\arunachal-pradesh_tezu_h.jpg" width="500px" height="280px" style="margin-left: 900px">
+	<br>
+	<br>
+	<img src="images\ej5epttyghi8egfbv2d7.jpg" width="500px" height="280px" style="margin-left:900px">
+	<br>
+	<br>
+	<img src="images\925045093s.jpg" width="500px" height="280px" style="margin-left:900px">
+	<br>
+	<br>
+	<img src="images\Walong to tezu .jpg" width="500px" height="280px" style="margin-left:900px">
+	<br>
+	<p id="para"><strong>Tezu</strong> is a census town and the headquarters of Lohit district in the Indian state of Arunachal Pradesh.All important offices of district administration are present in this town. The present Deputy Commissioner & Collector of Lohit is Sh.Danish Ashraf, IAS. The Deputy Commissioner (DC, also known as DM- District Magistrateor Collector), as the head of Lohit District, is in overall charge of the working and establishmentsof various departments. He supervises and controls all aspects of administrative and developmental activities that are carriedon by the departments in the district under his/her administrative jurisdiction.
+		<br>
+		The ancient inhabitant of this land of valley and rivers are the Mishmi tribes. The Mishmi tribes have traditions and customs dating back to the times of Mahabharata. According to sacred Hindu traditions, Lord Krishna's first queen Rukmini was a Mishmi Damsel. The major Mishmi God is Ringyajabmalu and the major Mishmi festival is known as Tamladu puja. It is celebrated each year on 15 February. People from all communities and all walks of life are invited to join in the celebrations. The Holy Parshuram Kund is also nearby and thousands of Hindu pilgrims from all over India, and also from neighbouring countries, come to take a holy dip and wash away the sins of millions of births. This is accompanied with a fair at Tezu and takes place every year during the month of January. The major agricultural products are mustard, ginger and oranges.<br>
+	<br>
+		<strong>Country</strong>	 India<br>
+		<strong>State</strong>	Arunachal Pradesh<br>
+		<strong>District</strong>	Lohit<br>
+		<strong>Established</strong>	1946<br>
+		<strong>Government</strong> Democratic<br>
+		<strong>Elevation</strong>	185 m (607 ft)<br>
+		<strong>Population (2011)</strong> Total	18,184<br>
+		<strong>Time zone</strong>	IST (UTC+5:30)<br>
+		<strong>ISO 3166</strong> code	IN-AR<br>
+		<strong>Vehicle registration</strong>	AR<br>
+	<br>
+		The recently constructed airport at Tezu will be the first civilian airport of Arunachal Pradesh. It is going to be fully operational by the end of this year. Other nearest airports are at Mohanbari (154 km) and Guwahati (Lokpriya Gopinath Bordoloi International Airport). Tezu is linked with the adjacent state Assam by road. Arunachal Pradesh State Transport Services (APSTS) and other privately owned vehicles provide seamless connectivity to Assam. Most of the vehicles provide connectivity to Tinsukia, Assam. The nearest railway station is at Tinsukia (NTSK) which is linked to major parts of country like Guwahati, Delhi, Kolkata, Bangalore, etc. A proposal to connect Tezu through broadgauge line from Murkongselek via Pasighat and extending up to Parshuram Kund was made. A preliminary engineering-traffic survey for this track has been completed.The newly constructed Lohit Bridge (2.9 KM) over the Lohit River at Alobarighat has also eased the connectivity of Tezu and other nearby towns with Assam. This bridge has helped Tezu in getting directly connected to Guwahati through bus service.
+</p>
+  <br>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images\download.png" alt="Avatar" class="avatar" width="100px" height="180px">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" style="background-color: rgba(0,0,0,0.7);border-radius:10px;color: white; width: 100%;height: 50px">Login</button>
+      <br><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1;width: 92.67%;margin-left: 0px">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+	  <footer class="footer">
+	<p>Copyright &copy; 2018| Anurachal Pradesh Tourism</p>
+</footer>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

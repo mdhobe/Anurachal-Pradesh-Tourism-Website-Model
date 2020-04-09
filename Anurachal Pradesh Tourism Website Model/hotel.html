@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotels</title>
+	<style type="text/css">
+		#body{
+			background-color: rgba(0,0,0,0.85);
+			padding: 0px;
+			font-family: courier;
+		}
+		#sidenav{
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: black;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		#sidenav a{
+			padding: 0px 55px 0px 50px;
+			text-decoration: none;
+			font-size: 25px;
+			color: rgba(255,255,255,0.9);
+			display: block;
+			display: inline-flex;
+		}
+		#sidenav a:hover{
+			color: rgba(255,255,0,0.6);
+		}
+		#title{
+			color: rgba(224,224,224,0.9);
+			margin-top: 85px;
+			text-align: center;
+			font-size: 40px;
+		}
+		.btn {
+  border: 2px solid black;
+  background-color: rgba(0,0,0,0.25);
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Green */
+.success {
+  border-color: black;
+  color: rgba(224,224,224,0.9);
+}
+
+.success:hover {
+  background-color: rgb(224,224,224);
+  color: rgba(0,0,0,0.9);
+}
+	#div{
+		width: 30%;
+		border:2px solid black;
+		border-radius: 10px;
+		border-color: black;
+		padding: 10px 20px;
+		align-content: center;
+		text-align: center;
+	}
+	.footer{
+		text-align: center;
+		color: rgba(224,224,224,0.8 );
+		padding-left: 20px;	
+		background-color: rgb(0,0,0);
+	}
+	 /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(224,224,224,0.85);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+	</style>
+</head>
+<body id="body">
+		<div id="sidenav">
+		<a href="Anurachal.html">Home</a>
+		<a href="destination.html">Destinations</a>
+		<a href="santury.html">Wildlife Santuries</a>
+		<a href="hotel.html">Hotels</a>
+		<a href="https://www.google.co.in/maps/place/Arunachal+Pradesh/@28.4450161,93.8051236,8z/data=!4m13!1m7!3m6!1s0x374043466a1c7227:0x76b56e552f9a92f2!2sArunachal+Pradesh!3b1!8m2!3d28.2179994!4d94.7277528!3m4!1s0x374043466a1c7227:0x76b56e552f9a92f2!8m2!3d28.2179994!4d94.7277528">Maps</a>
+		<a onclick="document.getElementById('id01').style.display='block'">Account</a>
+	</div>
+	<h1 id="title">Hotels</h1>
+	<hr>
+	<br>
+	<div style="display: inline-flex" style="margin-left: 10px">
+	<div id="div">
+		<h1 style="color: rgba(224,224,224,0.9)">Elysium Pride Hotel</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Bomdia, Anurachal Pradesh, India</h3>
+		<img src="images\4595-49622.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+	<div id="div" style="margin-left: 6%">
+		<h1 style="color: rgba(224,224,224,0.9)">Gakyi Khang Zhang</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Twang, Anurachal Pradesh, India</h3>
+		<img src="images\bentley-hotel-nyc-guestroom-view.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+	<br>
+	<div id="div" style="margin-left: 6%;;margin-right: 5px">
+		<h1 style="color: rgba(224,224,224,0.9)">Pung Teng House</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Twang, Anurachal Pradesh, India</h3>
+		<img src="images\4595-49622.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+</div>
+<br><br><br>
+	<div style="display: inline-flex" style="margin-left: 10px">
+	<div id="div">
+		<h1 style="color: rgba(224,224,224,0.9)">Elysium Hotel</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Bomdia, Anurachal Pradesh, India</h3>
+		<img src="images\hotel-concept-main.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+	<div id="div" style="margin-left: 6%">
+		<h1 style="color: rgba(224,224,224,0.9)">Blue Pine</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Twang, Anurachal Pradesh, India</h3>
+		<img src="images\hero-74.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+	<br>
+	<div id="div" style="margin-left: 6%;margin-right: 5px">
+		<h1 style="color: rgba(224,224,224,0.9)">Dolma Khangsar House</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Itanagar, Anurachal Pradesh, India</h3>
+		<img src="images\Vitale Guestroom King 03 PD0912 CRPD1600x760.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+</div>
+<br><br><br>
+	<div style="display: inline-flex" style="margin-left: 10px">
+	<div id="div">
+		<h1 style="color: rgba(224,224,224,0.9)">Norpel Retreat</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Bomdia, Anurachal Pradesh, India</h3>
+		<img src="images\headerImage-rosenCentreHotel_2.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+	<div id="div" style="margin-left: 6%">
+		<h1 style="color: rgba(224,224,224,0.9)">Sirro Resort</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Itanager, Anurachal Pradesh, India</h3>
+		<img src="images\cphdk_main01.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+	<br>
+	<div id="div" style="margin-left: 6%;margin-right: 5px">
+		<h1 style="color: rgba(224,224,224,0.9)">Itafort</h1>
+		<h3 style="color: rgba(224,224,224,0.8)">Itanagar, Anurachal Pradesh, India</h3>
+		<img src="images\hanoi-top-luxury-hotel.jpg" width="400px" height="220px">
+		<br>
+		<br>
+		<button class="btn success">Deals</button>
+	</div>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images\download.png" alt="Avatar" class="avatar" width="100px" height="180px">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" style="background-color: rgba(0,0,0,0.7);border-radius:10px;color: white; width: 100%;height: 50px">Login</button>
+      <br><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1;width: 92.67%;margin-left: 0px">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+  <br>
+  <footer class="footer">
+	<p>Copyright &copy; 2018| Anurachal Pradesh Tourism</p>
+</footer>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

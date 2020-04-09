@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wakro</title>
+	<style type="text/css">
+		#body{
+			background-color: rgba(0,0,0,0.85);
+			padding: 0px;
+			font-family: courier;
+		}
+		#sidenav{
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: black;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		#sidenav a{
+			padding: 0px 55px 0px 50px;
+			text-decoration: none;
+			font-size: 25px;
+			color: rgba(255,255,255,0.9);
+			display: block;
+			display: inline-flex;
+		}
+		#sidenav a:hover{
+			color: rgba(255,255,0,0.6);
+		}
+		#title{
+			color: rgba(224,224,224,0.9);
+			margin-top: 85px;
+			text-align: center;
+			font-size: 40px;
+		}
+		#para{
+		width: 55%;
+		color: rgba(224,224,224,0.9 );
+		font-size: 20px;
+		padding-left: 20px;
+		margin-top: -1270px;
+		}
+		.footer{
+		text-align: center;
+		color: rgba(224,224,224,0.8 );
+		padding-left: 20px;	
+		background-color: rgb(0,0,0);
+		}
+ /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(224,224,224,0.85);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+	</style>
+</head>
+<body id="body">
+	<div id="sidenav">
+		<a href="Anurachal.html">Home</a>
+		<a href="destination.html">Destinations</a>
+		<a href="santury.html">Wildlife Santuries</a>
+		<a href="hotel.html">Hotels</a>
+		<a href="https://www.google.co.in/maps/place/Arunachal+Pradesh/@28.4450161,93.8051236,8z/data=!4m13!1m7!3m6!1s0x374043466a1c7227:0x76b56e552f9a92f2!2sArunachal+Pradesh!3b1!8m2!3d28.2179994!4d94.7277528!3m4!1s0x374043466a1c7227:0x76b56e552f9a92f2!8m2!3d28.2179994!4d94.7277528">Maps</a>
+		<a onclick="document.getElementById('id01').style.display='block'">Account</a>
+	</div>
+	<h1 id="title">Wakro</h1>
+	<hr>
+	<br>
+	<img src="images\alaska-67163_640.jpg" width="530px" height="300px" style="margin-left: 900px">
+	<br>
+	<br>
+	<img src="images\394fc1d01109bb93e89a28ae76f69ea2.jpg" width="530px" height="300px" style="margin-left:900px">
+	<br>
+	<br>
+	<img src="images\maxresdefault (1).jpg" width="530px" height="300px" style="margin-left:900px">
+	<br>
+	<br>
+	<img src="images\rizières.jpeg" width="530px" height="300px" style="margin-left:900px">
+	<br>
+	<p id="para"><strong>Wakro</strong> is a village panchayat located in the Lohit district of Arunachal-Pradesh state,India. The latitude 27.785858 and longitude 96.354647 are the geocoordinate of the Wakro. Itanagar is the state capital for Wakro village. It is located around 280.2 kilometer away from Wakro.. The other nearest state capital from Wakro is Raipur and its distance is 195.8 KM. The other surrouning state capitals are Imphal 411.0 KM., Dispur 485.6 KM., Shillong 509.1 KM.
+	<br>
+		Wakro village is located in the UTC 5.30 time zone and it follows indian standard time(IST). Wakro sun rise time varies -56 minutes from IST. The vehicle driving side in Wakro is left, all vehicles should take left side during driving. Wakro people are using its national currency which is Indian Rupee and its internationl currency code is INR. Wakro phones and mobiles can be accesed by adding the indian country dialing code +91 from abroad. Wakro people are following the dd/mm/yyyy date format in day-to-day life. Wakro domain name extension( cTLD) is .in .<br>
+	<br>		
+	<strong>Village</strong>	Wakro<br>
+	<strong>Block</strong>	Wakro<br>
+	<strong>District</strong>	Lohit<br>
+	<strong>State</strong>	Arunachal Pradesh<br>
+	<strong>Country</strong>	India<br>
+	<strong>Continent</strong>	Asia<br>
+	<strong>Time Zone</strong>	IST ( UTC + 05:30)<br>
+	<strong>Currency</strong>	Indian Rupee ( INR )<br>
+	<strong>Dialing Code</strong>	+91<br>
+	<strong>Date format</strong>	dd/mm/yyyy<br>
+	<strong>Driving side</strong>	left<br>
+	<strong>Internet cTLD</strong>	in<br>
+	<strong>Language</strong>	English<br>
+	<strong>Time difference</strong>	-56 minutes<br>
+	<strong>Latitude</strong>	27.785858<br>
+	<strong>Longitude</strong>	96.354647<br>
+	<br>
+		According to the 2011 census Lohit district has a population of 145,538, roughly equal to the nation of Saint Lucia. This gives it a ranking of 601st in India (out of a total of 640). The district has a population density of 28 inhabitants per square kilometre (73/sq mi) . Its population growth rate over the decade 2001–2011 was 16.44%. Lohit has a sex ratio of 901 females for every 1000 males, and a literacy rate of 69.88%.
+
+Lohit is the home of the, Zekhring, Khampti, Deori, Monpa, Memba, Ahom,Chutiya[Singpho people|Singpho]], Chakma and Mishmi tribes. A small group of Tibetans have settled in Lohit since the 1960s. The Zekhring are Tibetan Buddhists; the Khampti,Chakmas and Singpho are Theravada Buddhists, and the Mishmi are mainly Animists.The Chakmas inhabit a land which is surrounded in all side by two mighty rivers, the Kamlang to the north and [[Guri Kamlang] or bareng] to the south. There is no proper bridge on Guri Kamlang which can connect the people to Chowkham. They have to walk on a swinging bridge on which its very difficult to carry goods. Every election time the people demand for a new permanent bridge over the Guri Kamlang but none of the elected MLAs sufficed to their demands.chakmas are peace loving people. Ahoms are residing at Namsai and Mahadevpur circle of Lohit district. The Singphos are very few in numbers in comparison to the other tribes. The Singhpos do not make houses near each other and seeing houses in proximity to other houses are rare.</p>
+
+  <br>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images\download.png" alt="Avatar" class="avatar" width="100px" height="180px">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" style="background-color: rgba(0,0,0,0.7);border-radius:10px;color: white; width: 100%;height: 50px">Login</button>
+      <br><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1;width: 92.67%;margin-left: 0px">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+	  <footer class="footer">
+	<p>Copyright &copy; 2018| Anurachal Pradesh Tourism</p>
+</footer>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
